@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengelolaan Iman</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pengelolaan Iman</h1>
+        
+        <!-- Jurnal Doa -->
+        <section class="card">
+            <h2>Jurnal Doa</h2>
+            <textarea id="journal" placeholder="Tulis doa atau refleksi..."></textarea>
+            <button onclick="addJournalEntry()">Simpan</button>
+            <ul id="journalList"></ul>
+        </section>
+        
+        <!-- Pengingat Ibadah -->
+        <section class="card">
+            <h2>Pengingat Ibadah</h2>
+            <input type="text" id="reminder" placeholder="Tambah pengingat...">
+            <button onclick="addReminder()">Tambah</button>
+            <ul id="reminderList"></ul>
+        </section>
+    </div>
+</body>
+</html>
